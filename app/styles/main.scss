@@ -1,0 +1,39 @@
+$main-color: #fff;
+$back-color: #444;
+$letter-color: #000;
+$border-top: #ccc;
+body{
+	color:$main-color;
+	padding: 20px;
+	background: $back-color;
+}
+.shadow{
+	display: flex;
+	transform: rotate(30deg);
+	box-shadow:1px 1px 5px $back-color;
+}
+.logo{
+    max-width: 150px;
+    float:left;
+    transition: 1000ms ease;
+    &:hover{
+        transform: rotate(360deg);
+    }
+}
+
+#map {
+      color: $letter-color;
+      height: 420px;
+      width: 600px;
+    }
+    
+    .infoWindowContent {
+      font-size: 14px !important;
+      border-top: 1px solid $border-top;
+      padding-top: 10px;
+    }
+    
+    h2 {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
